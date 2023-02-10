@@ -25,6 +25,7 @@ function App() {
     const productNameValue = productNameRef.current.value;
     const countPhotoValue = countPhotoRef.current.value;
 
+    // eslint-disable-next-line no-useless-escape
     const replaceProductName = productNameValue.replace(/[\.\/\(\)]/g, "-");
 
     const getPath = (pathNumber, str, count) =>
